@@ -1,0 +1,9 @@
+---
+- name: Actualiza la cache de los repos
+  apt: 
+    update_cache: yes
+
+- name: Instalación de dependencias
+  apt: 
+    name: ['git']
+
