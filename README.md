@@ -7,6 +7,6 @@ roles:
 - brave
 - code
 - vbox
+- vbox_additions
 - vagrant
-- git
-- woeusb
+
