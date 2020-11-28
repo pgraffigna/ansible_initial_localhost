@@ -1,11 +1,10 @@
 ---
-- name: Instalación de dependencias
+- name: Instalación de snapd
   apt:
-    name: ['snapd']
+    name: snapd
 
 - name: Instalar vscode 
   snap:
     name: code
     classic: yes
-  tags:
-    - code	
+  

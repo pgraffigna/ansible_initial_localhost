@@ -1,6 +1,5 @@
 ---
-- hosts: localhost
-  connection: local
+- hosts: lubuntu
   become: true
 
   roles:	 
@@ -11,5 +10,7 @@
     - code
     - vagrant
     - vbox
-    - vbox_additions
-    
+    - bat
+    - blue_mail
+    - only_office
+

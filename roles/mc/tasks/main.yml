@@ -1,4 +1,4 @@
 ---
 - name: Instalación de Midnight commander
   apt:
-    name: ['mc']
+    name: mc

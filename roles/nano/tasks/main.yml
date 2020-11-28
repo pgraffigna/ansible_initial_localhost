@@ -1,7 +1,7 @@
 ---
-- name: Instalación de dependencias
+- name: Instalación de nano
   apt: 
-    name: ['nano']
+    name: nano
 
 - name: Insertar líneas al final del archivo
   blockinfile:
@@ -19,5 +19,3 @@
     create: yes
     owner: "{{ user }}"
     group: "{{ user }}"
-  tags:
-    - nano  

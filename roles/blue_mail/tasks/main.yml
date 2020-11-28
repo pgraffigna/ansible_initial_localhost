@@ -1,0 +1,9 @@
+---
+- name: Descargar blue_mail 
+  get_url:
+    url: "{{ url }}"
+    dest: /tmp
+
+- name: Instalar blue_mail
+  apt:
+    deb: "/tmp/{{ deb }}"    

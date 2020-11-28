@@ -1,8 +1,4 @@
 ---
-- name: Actualiza la cache de los repos
-  apt: 
-    update_cache: yes
-
 - name: Instalar virtualbox
   apt:
     name: virtualbox

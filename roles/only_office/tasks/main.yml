@@ -1,0 +1,17 @@
+---
+- name: Instalación de dependencias
+  apt: 
+    name: ['fonts-crosextra-carlito', 'fonts-dejavu', 'fonts-dejavu-extra', 'gstreamer1.0-libav', 'gstreamer1.0-plugins-ugly', 'libopencore-amrnb0', 'libopencore-amrwb0', 'libsidplay1v5']
+
+- name: Descargar only-office 
+  get_url:
+    url: "{{ url }}"
+    dest: /tmp
+
+- name: Instalar only-office
+  apt:
+    deb: "/tmp/{{ deb }}"     
+
+
+
+

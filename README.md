@@ -1,5 +1,7 @@
 # ansible
-Playbook con configuración inicial para equipos con linux (localhost) 
+Playbook con configuración inicial para equipos con linux
+
+Testeado con Virtualbox + Ubuntu 20.04   
 
 roles:	 
 - tmux
@@ -8,6 +10,7 @@ roles:
 - brave
 - code
 - vbox
-- vbox_additions
 - vagrant
-
+- bat
+- blue_mail
+- only_office
