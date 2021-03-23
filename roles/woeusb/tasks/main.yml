@@ -1,0 +1,13 @@
+---
+- name: Instalación de dependencias
+  apt:
+    name: ['git', 'p7zip-full', 'python3-pip', 'python3-wxgtk4.0']
+    state: latest
+
+- name: Clona el repo
+  git:
+    repo: "{{ repo }}"
+    dest: /opt/WoeUSB-ng
+
+- name: Instalación de WoeUSB
+  shell: cd /opt/WoeUSB-ng && pip3 install .    
